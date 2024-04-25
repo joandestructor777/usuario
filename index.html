@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de Experiencia del Usuario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Encuesta de Experiencia del Usuario</h2>
+    <form id="encuestaForm">
+      <div class="question">
+        <label for="apariencia">¿Qué te pareció la apariencia visual de la página web, <span id="nombreSpan" class="nombreSpan"></span>?</label>
+        <textarea id="apariencia" name="apariencia" rows="4" required></textarea>
+      </div>
+      <div class="question">
+        <label for="interfaz">¿Encontraste fácil de usar la interfaz de usuario, <span id="nombreSpan2" class="nombreSpan"></span>? ¿Hubo algún elemento que te resultara confuso o difícil de entender?</label>
+        <textarea id="interfaz" name="interfaz" rows="4" required></textarea>
+      </div>
+      <div class="question">
+        <label for="velocidad">¿Qué opinas sobre la velocidad de carga de la página y la capacidad de respuesta de las funciones interactivas, <span id="nombreSpan3" class="nombreSpan"></span>?</label>
+        <textarea id="velocidad" name="velocidad" rows="4" required></textarea>
+      </div>
+      <div class="question">
+        <label for="funcionalidades">¿Las funcionalidades principales, como subir imágenes, seguir a otros usuarios y dejar comentarios, funcionaron correctamente para ti, <span id="nombreSpan4" class="nombreSpan"></span>?</label>
+        <textarea id="funcionalidades" name="funcionalidades" rows="4" required></textarea>
+      </div>
+      <div class="question">
+        <label for="problemas">¿Encontraste algún error o problema mientras navegabas por la página, <span id="nombreSpan5" class="nombreSpan"></span>? Si es así, ¿puedes describirlo brevemente?</label>
+        <textarea id="problemas" name="problemas" rows="4"></textarea>
+      </div>
+      <div class="question">
+        <label for="experiencia">En una escala del 1 al 10, ¿cómo calificarías tu experiencia general utilizando esta página web, <span id="nombreSpan6" class="nombreSpan"></span>?</label>
+        <input type="range" id="experiencia" name="experiencia" min="1" max="10" required>
+        <span id="valorExperiencia">5</span>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
